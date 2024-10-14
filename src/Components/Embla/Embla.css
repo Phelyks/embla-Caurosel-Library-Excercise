@@ -1,0 +1,65 @@
+.embla {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    gap: 10px;
+
+}
+
+.embla-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.embla-container :nth-child(1){
+    margin-left: 20px;
+}
+.embla-slide {
+    min-width: 100%;
+    max-width: 100%;
+    height: 500px;
+    flex: 0 0 60%;
+    min-width: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.scrollBtn {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scrollBtn button {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+
+/* <<<< Media Query >>>> */
+
+
+
+  @media (max-width: 768px) {
+    .embla-slide {
+      flex: 0 0 90%; /* Breakpoint SM slide covers 50% of the viewport */
+    }
+  }
+  
